@@ -1,10 +1,10 @@
 <html>
 	<head>
-	<title> My First PHP Website</title>
+	<title> Cubie</title>
 	</head>
 	<body>
 		<?php
-			echo "<p> Hello World!</p>";
+			echo "<p> Cubie Jones!</p>";
 		?>
 	</body>
 <html>
