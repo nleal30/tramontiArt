@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>News Theme</title>
+    <title>Tramonti Art</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
@@ -33,8 +33,8 @@
                     <h4>Best one page website template 
                             for your product</h4>
                     <div class="button-sec">
-                        <a href="inner.html" class="btn buy-btn">Buy Now</a>
-                        <a href="details.html" class="btn details-btn">Details</a>
+                        <a href="inner.php" class="btn buy-btn">Buy Now</a>
+                        <a href="details.php" class="btn details-btn">Details</a>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -95,7 +95,7 @@
                     <h2>Watch the preview</h2>
                     <h4>A small video of your product</h4>
                     <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum type and scrambled it to make a type specimen book. It has survived not only five</h6>
-                    <a href="inner.html" class="btn buy-btn">Buy Now</a>
+                    <a href="inner.php" class="btn buy-btn">Buy Now</a>
                 </div>
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-16by9">
