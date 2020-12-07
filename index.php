@@ -16,10 +16,10 @@
     <header style ="background-color:white;">
         <div class="container">
             <div class="brand-sec">
-                <img src="images/logo.png" alt="logo" style= "vertical-align:bottom">
+                <img src="images/logo.png" alt="logo" width = "180" height = "180" style= "vertical-align:bottom">
             </div>
             <div class="content">
-                <h5>Lorem Ipsum is simply dummy text of the  <br/>printing and typesetting industry. </h5>
+                <h5 style = "color: blue;" >Lorem Ipsum is simply dummy text of the  <br/>printing and typesetting industry. </h5>
             </div>
         </div>
     </header>
