@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <div class="brand-sec">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/logo.png" alt="logo" width ="40" height = "40">
             </div>
             <div class="content">
                 <h5>Lorem Ipsum is simply dummy text of the  <br/>printing and typesetting industry. </h5>
