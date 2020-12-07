@@ -16,7 +16,7 @@
     <header style ="background-color:white;">
         <div class="container">
             <div class="brand-sec">
-                <img src="images/logo.png" alt="logo" width = "70" height = "100" style= "vertical-align:bottom">
+                <img src="images/logo.png" alt="logo" width = "100" height = "70" style= "vertical-align:bottom">
             </div>
             <div class="content">
                 <h5 style = "color: blue;" >Tramonti Art is where you can   <br/>get the best personalized portraits. </h5>
