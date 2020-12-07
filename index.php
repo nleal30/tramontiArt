@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header style ="background-color:white;">
         <div class="container">
             <div class="brand-sec">
                 <img src="images/logo.png" alt="logo" style= "vertical-align:bottom">
