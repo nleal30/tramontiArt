@@ -16,10 +16,10 @@
     <header style ="background-color:white;">
         <div class="container">
             <div class="brand-sec">
-                <img src="images/logo.png" alt="logo" width = "180" height = "180" style= "vertical-align:bottom">
+                <img src="images/logo.png" alt="logo" width = "90" height = "90" style= "vertical-align:bottom">
             </div>
             <div class="content">
-                <h5 style = "color: blue;" >Lorem Ipsum is simply dummy text of the  <br/>printing and typesetting industry. </h5>
+                <h5 style = "color: blue;" >Tramonti Art is where you can   <br/>get the best personalized portraits. </h5>
             </div>
         </div>
     </header>
