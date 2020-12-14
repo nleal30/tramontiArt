@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>News Theme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
-    <!--    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <div class="brand-sec">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="content">
-                <h5>Lorem Ipsum is simply dummy text of the  <br/>printing and typesetting industry. </h5>
-            </div>
-        </div>
-    </header>
+<?php
+include_once 'header.php';
+?>
     <section class="inner-sec product-sec">
         <div class="container">
             <h1>Product Details</h1>

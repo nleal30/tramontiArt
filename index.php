@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Tramonti Art</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
-    <!--    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
-    <header style ="background-color:white;">
-        <div class="container">
-            <div class="brand-sec">
-                <img src="images/logo.png" alt="logo" width = "100" height = "70" style= "vertical-align:bottom">
-            </div>
-            <div class="content">
-                <h5 style = "color: blue;" >Tramonti Art is where you can   <br/>get the best personalized portraits. </h5>
-            </div>
-        </div>
-    </header>
+<?php
+include_once 'header.php';
+?>	
     <section class="banner-sec" style="background:url(./images/banner-img.jpg)no-repeat;">
+	
         <div class="cover"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1>Promote your product 
-                        with this template</h1>
-                    <h4>Best one page website template 
-                            for your product</h4>
+					<a href="details.php">
+                    <h1>Custom Acrylic<br/>Pet Portrait</h1>
+					</a>
                     <div class="button-sec">
                         <a href="inner.php" class="btn buy-btn">Buy Now</a>
-                        <a href="details.php" class="btn details-btn">Details</a>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -48,46 +25,7 @@
             </div>
         </div>
     </section>
-    <section class="featured-sec">
-        <div class="container">
-            <div class="title-sec">
-                <span class="plane-icon"><i class="fas fa-paper-plane"></i></span>
-                <h2>Featured of the product</h2>
-                <h5>Some silent features of the product are below</h5>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-item">
-                        <h3>Completely responsive</h3>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</h6>
-                        <span class="certi"><i class="fas fa-certificate"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item">
-                        <h3>Unlimited color schemes</h3>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</h6>
-                        <span class="certi"><i class="fas fa-certificate"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item">
-                        <h3>HTML5 and CSS3 power</h3>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</h6>
-                        <span class="certi"><i class="fas fa-certificate"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item">
-                        <h3>500+ Google Webfonts</h3>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</h6>
-                        <span class="certi"><i class="fas fa-certificate"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="preview-sec" style="background:url(./images/preview-bg.jpg)no-repeat;">
+    <section class="preview-sec" style="background-color:#6ea054;">
         <div class="layer"></div>
         <div class="container">
             <div class="row">
@@ -105,38 +43,25 @@
             </div>
         </div>
     </section>
-    <section class="product-gallery">
+	<section class="banner-sec" style="background:url(./images/banner-img.jpg)no-repeat;">
+        <div class="cover"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <figure class="product">
-                        <img src="images/product-img.jpg" alt="product">
-                    </figure>
-                </div>
-                <div class="col-md-6">
-                    <div class="product-content">
-                        <h2>Watch the preview</h2>
-                        <h4>A small video of your product</h4>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum type and scrambled it to make a type specimen book. It has survived not only five</h6>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum type and scrambled it to make a type specimen book. It has survived not only five</h6>
+                <div class="col-md-7">
+					<a href="details.php">
+                    <h1>Acrylic Custom <br/> Bust Pet Portrait</h1>
+					</a>
+                    <div class="button-sec">
+                        <a href="inner.php" class="btn buy-btn">Buy Now</a>
                     </div>
                 </div>
-            </div>
-            <div class="row products-group">
-                <div class="col col-md-4 col-12">
-                    <figure>
-                        <img src="images/p-img.jpg" alt="p1">
-                    </figure>
-                </div>
-                <div class="col col-md-4 col-12">
-                    <figure>
-                        <img src="images/p-img.jpg" alt="p1">
-                    </figure>
-                </div>
-                <div class="col col-md-4 col-12">
-                    <figure>
-                        <img src="images/p-img.jpg" alt="p1">
-                    </figure>
+                <div class="col-md-5">
+                    <div class="product-img">
+                        <img src="images/product-img.jpg">
+                        <div class="price">
+                            39<span>$</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,7 +113,7 @@
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="phone">
-                        <span><i class="fas fa-phone-square"></i></span>800 1230 4569
+                        <span><i class="fas fa-phone-square"></i></span>805 807 4748
                     </div>
                 </div>
                 <div class="col-md-3 col-12">

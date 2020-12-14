@@ -161,7 +161,7 @@ a {
 }
 
 .container {
-    width: 980px;
+    width: 1100px;
     padding: 0 0px;
     max-width: 1200px;
 }
@@ -183,36 +183,41 @@ section {
 h5 {
     margin: 0;
 }
-
+	
 header {
-    background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(155, 161, 123, 1);*/
     height: 240px;
     padding: 85px 0;
-    position: relative;
+    /*position: relative;*/
     color: #fff;
     position: fixed;
     width: 100%;
     z-index: 99;
+	opacity: 0.8;	
 }
 
 header.active {}
 
-header .brand-sec {
-    float: left;
-}
-
-header .content {
+header .logo {
+    float: Left;
+	}
+	
+header .logo:hover {
+    background-color: #6ea054;
+	}
+	
+header .navbuttons nav{
+	color: Gray;
     float: right;
-    width: 400px;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     padding: 5px 0;
 }
 
-header .content h5 {
-    line-height: 26px;
-    font-size: 14px;
-    text-transform: inherit;
+header .navbuttons nav:hover{
+	color: #528C26;
+	
+
 }
 
 .banner-sec {
@@ -241,9 +246,9 @@ header .content h5 {
 }
 
 h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    color: #363636;
+    font-size: 30px;
+    /*text-transform: lowercase;*/
+    color: Gray;
     font-weight: 600;
     margin-bottom: 35px;
 }
@@ -279,12 +284,12 @@ h4 {
 }
 
 .buy-btn {
-    background: #fc4733;
-    border: 5px solid #fc4733;
+    background: #6ea054;
+    border: 5px solid #6ea054;
 }
 
 .buy-btn:hover {
-    color: #fc4733;
+    color: #528C26;
 }
 
 .details-btn {
@@ -300,8 +305,8 @@ product-img {
     position: absolute;
     width: 140px;
     height: 140px;
-    background: #fc4733;
-    color: #fff;
+    background: #FFF;
+    color: #6ea054;
     top: -60px;
     left: -50px;
     border-radius: 50%;
@@ -448,10 +453,10 @@ h5 {
 }
 
 .preview-sec .buy-btn:hover {
-    background: #fc4733;
-    border: 5px solid #fc4733;
+    background: #6ea054;
+    border: 5px solid #6ea054;
     color: #fff
-}
+}```
 
 .product-gallery {
     overflow: hidden;
