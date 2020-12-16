@@ -2,7 +2,6 @@
 include_once 'header.php';
 ?>	
     <section class="banner-sec" style="background:url(./images/banner-img.jpg)no-repeat;">
-	
         <div class="cover"></div>
         <div class="container">
             <div class="row">
@@ -11,7 +10,7 @@ include_once 'header.php';
                     <h1>Custom Acrylic<br/>Pet Portrait</h1>
 					</a>
                     <div class="button-sec">
-                        <a href="inner.php" class="btn buy-btn">Buy Now</a>
+                        <a href="customAcrylic.php" class="btn buy-btn">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-md-5">
