@@ -29,7 +29,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js">
     </script>
-	<script type="text/javascript" src="js/BuildOrder.js"></script>
+	<script type="text/javascript" src="js/buildOrder.js"></script>
 	<script type="text/javascript" src="js/vars.js"></script>
 	<script type="text/javascript" src="js/events.js"></script>
 	<script type="text/javascript" src="js/orderDesignSelect.js"></script>
