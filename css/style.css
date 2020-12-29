@@ -86,6 +86,12 @@ video {
     vertical-align: baseline;
 }
 
+:root
+{
+	--sageGreen: #6ea054;
+	--subcolor: 	#849baa;
+}
+
 body {
     line-height: 1;
     height: 100%;
@@ -103,6 +109,92 @@ blockquote,
 q {
     quotes: none;
 }
+
+/*-----------------*/
+
+		#main_nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+		.logoContainer{
+            background: white;
+			border: 2px outset;
+        }
+		.logoContainer:hover{
+     
+			border: 2px inset;
+        }
+        #main_nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background: var(--sageGreen);
+            /* menu background color */
+        }
+
+        #main_nav li a {
+            display: block;
+            padding: 0;
+            text-decoration: none;
+            width: 200px;
+            /* this is the width of the menu items */
+            line-height: 35px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+		#checkoutTotal
+		{
+			font-Weight: Bold;
+		}
+        #main_nav li li a {
+            font-size: 80%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #main_nav li:hover {
+            background: var(--subcolor);
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #main_nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #main_nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #main_nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sub sublist on hover */
+
+        #main_nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 200px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }        
+
+
+
+/*------------------------*/
+
 
 blockquote:before,
 blockquote:after,
@@ -151,14 +243,110 @@ input:focus {
 	background-color: white;
 	border: none;
 }
-.orderDesign{
-	border:5px dotted gray;
+#Clear_Cart
+{
+	right: 0;
 }
-.orderDesign button:hover{
-	/*border:5px solid #6ea054 !important;*/
-	background-color:#6ea054 !important;
+#colorCheckoutContain
+{
+	width: 38%
+}
+#colorDisplay
+{
+	float: right;
+	width:45px;
+    height:45px;
+	border-radius: 50%;
+    /*margin:50px auto;*/
+    border:1px solid rgb(50,50,50);*/ 
+}
+.checkoutThumnailContainer
+{
+	width: 30%;
+	float: left;	
+
+}
+.checkoutThumnail
+{
+	width: 146px;
+	height: 194px;
+	border: 2px solid;
+}
+.orderContents
+{
+	width: 70%;
+	font-family: 'Roboto Slab', serif;
+	line-height: 3.5 ;
+	float: left;
+}
+.checkoutOrderSum
+{
+	width: 70%;
+	border: 2px outset;
+}
+.checkoutOrderSum:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Shopping_Cart
+{
+	display: None;
+	bottom: 40px;
+	right: 60px;
+	position: fixed;
+}
+.Cart_preview
+{
+	top: -160px;
+	right: -44px;
+	font-weight: bold;
+	height: 160px;
+	width: 160px;
+	position: absolute;
+	border: 2px solid var(--subcolor);
+	display:none;
+	background: var(--sageGreen);
+	font-size: 10px;
+	text-align: left;
+	overflow-y: Auto;
 }
 
+.Cart_contents{
+ font-weight: normal;
+}
+
+.Shopping_Cart:hover .Cart_preview
+{
+display:block;
+}
+.Cart_Button
+{
+	width: 60px;
+	height: 30px;
+	color: Black;
+	background: var(--sageGreen);
+	border: 5px outset;
+}
+
+.product-content-sec{
+	
+	border: 5px outset
+	/*white-space: nowrap;*/
+}
+.col-md-7 label{
+	
+	color: var(--sageGreen); 
+	font-style: italic;
+	/*white-space: nowrap;*/
+}
+
+.totals{
+	height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	/*white-space: nowrap;*/
+}
 
 button:focus {
     outline: 0;
@@ -173,7 +361,7 @@ a {
 }
 
 .container {
-    width: 1100px;
+    width: 1200px;
     padding: 0 0px;
     max-width: 1200px;
 }
@@ -197,7 +385,7 @@ h5 {
 }
 	
 header {
-	/*background: rgba(155, 161, 123, 1);*/
+	background: var(--sageGreen);
     height: 240px;
     padding: 85px 0;
     /*position: relative;*/
@@ -205,7 +393,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99;
-	opacity: 0.8;	
+	opacity: 0.9;
 }
 
 header.active {}
@@ -216,46 +404,82 @@ header .logo {
 	position: Relative;
 	}
 
+.close{
+	position: relative;
+	height: 8%;
+	width: 4%;
+}
+
+.logo img
+{
+width: 60px;
+height: 60px;
+}
+
+#checkout_button
+{
+	display: none;
+}
+
+#checkout_button:hover
+{
+	color: var(--subcolor);
+}
+
+#orders_button:hover
+{
+	color: var(--subcolor);
+}
+#admin_button:hover
+{
+	color: var(--subcolor);
+}
 .dropdown-content {
   display: none;
-  position: absolute;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  color: red;
 }
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+
+.Cart_Num
+{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background: var(--sageGreen);
+	border-radius: 50%;
+	width: 20px;
+	height: 15px;
+	font-size: 12px;
+	font-Weight: bold;
 }
-.dropdown-content a:hover {
-	background-color: #ddd;
-	}
 
 .logo:hover .dropdown-content {
 	display: block;
-	background-color:#6ea054;
-	
+	background-color:var(--sageGreen);
 	}
-
 header .logo:hover {
-    background-color: #6ea054;
+    background-color: var(--sageGreen);
 	}
 	
-header .navbuttons {
-	color: Gray;
-    float: right;
+.navbuttons {
+	color: black ;
+    float: Right;
     text-align: right;
     padding: 5px 0;
 	font-size: 14px;
 	word-spacing: 6px;
+	font-Weight: bold;
+	height: 60%;
+	width: 30%;
+}
+.navbuttons nav {
+	position: absolute;
+	right: 40px;
+	top: 40px;
 }
 
-header .navbuttons nav:hover{
-	color: #6ea054;
-}
+
 
 .banner-sec {
     padding: 100px 0;
@@ -285,7 +509,7 @@ header .navbuttons nav:hover{
 h1 {
     font-size: 30px;
     /*text-transform: lowercase;*/
-    color: Gray;
+    color: var(--subcolor);
     font-weight: 600;
     margin-bottom: 35px;
 }
@@ -321,8 +545,8 @@ h4 {
 }
 
 .buy-btn {
-    background: #6ea054;
-    border: 5px solid #6ea054;
+    background: var(--sageGreen);
+    border: 5px solid var(--sageGreen);
 }
 
 .buy-btn:hover {
@@ -343,7 +567,7 @@ product-img {
     width: 140px;
     height: 140px;
     background: #FFF;
-    color: #6ea054;
+    color: var(--sageGreen);
     top: -60px;
     left: -50px;
     border-radius: 50%;
@@ -572,8 +796,8 @@ h5 {
 }
 
 .preview-sec .buy-btn:hover {
-    background: #6ea054;
-    border: 5px solid #6ea054;
+    background: var(--sageGreen);
+    border: 5px solid var(--sageGreen);
     color: #fff
 }```
 
@@ -842,6 +1066,7 @@ footer h5 a {
 
 .product-content-sec {
     padding-left: 20px;
+	
 }
 
 .product-content-sec p {

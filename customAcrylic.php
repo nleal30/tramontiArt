@@ -9,16 +9,20 @@ include_once 'header.php';
 			<!-------SLIDESHOW--->
                 <div class="col-md-5">
                     <div class="slideshow product-img">
-						<div class="slideshowNum">1 / 3</div>
+						<div class="slideshowNum">1 / 4</div>
                         <img src="images/product-img.jpg" alt="img">
                     </div>
 					<div class="slideshow product-img">
-						<div class="slideshowNum">2 / 3</div>
+						<div class="slideshowNum">2 / 4</div>
                         <img src="images/acrylic2.jpg" alt="img">
                     </div>
 					<div class="slideshow product-img">
-						<div class="slideshowNum">3 / 3</div>
+						<div class="slideshowNum">3 / 4</div>
                         <img src="images/acrylic3.jpg" alt="img">
+                    </div>
+					<div class="slideshow product-img">
+						<div class="slideshowNum">4 / 4</div>
+                        <img src="images/acrylic4.jpg" alt="img">
                     </div>
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -35,60 +39,89 @@ include_once 'header.php';
 						<div class="column">
 						<img class="demo cursor" src="images/acrylic3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Acrylic Portrait">
 						</div>
+						<div class="column">
+						<img class="demo cursor" src="images/acrylic4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Acrylic Portrait">
+						</div>
                 </div>
 				<script type = "text/javascript" src = "js/slideshow.js"></script>
 				<!----SLIDESHOW----->
-				
                 <div class="col-md-7">
+					<div class="product-description-sect">
+					 Describe ProductDescribe ProductDescribe ProductDescribe ProductDescribe ProductDescribe ProductDescribe ProductDescribe Product
+					</Div>
+					<br/>
                     <div class="product-content-sec">
-                        <label for = "Size"> Size: </label>
-						<select name = "size" id = "size" >
-							<option value = "4x6">4x6</option>
-							<option value = "5.5x8.5">5.5X8.5</option>
-							<option value = "8x10">8x10</option>
+						<label for = "Bust"> Bust: </label>
+						<select class = "orderBuild" name = "bust" id = "bust">
+							<option value = "False">No</option>
+							<option value = "True">Yes</option>
 						</select>
+                        <label for = "Size"> Size: </label>
+						<select class = "orderBuild" name = "size" id = "size">
+							<option value = "0">4x6</option>
+							<option value = "1">5.5X8.5</option>
+							<option value = "2">8x10</option>
+						</select>
+						<br/>
 						<br/>
 						<label for = "numPets"> Number of Pets: </label>
-						<select name = "numPets" id = "numPets" >
-							<option value = "1">1</option>
-							<option value = "2">2</option>
-							<option value = "3">3</option>
+						<select class = "orderBuild" name = "numPets" id = "numPets">
+							<option value = "0">1</option>
+							<option value = "1">2</option>
+							<option value = "2">3</option>
 						</select>
 						<br/>
-						<label for ="orderDesign"> Select a shape: </label>
-						<div class = "orderDesign">
-							<button class = "Shape_button" value = "square" onclick = "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/square_shape.jpg">
+						<br/>
+						<label for ="orderDesign"> Please select a background shape: </label>
+						<div name = "orderDesign" class = "orderDesign">
+							<button class = "Shape_button" name = "square">
+							<img name = "square" class = "shape_img" src="images/square_shape.jpg">
 							</button>
-							<button class = "Shape_button" value = "circle" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/circle_shape.jpg">
+							<button class = "Shape_button" name = "circle">
+							<img class = "shape_img" name = "circle" src="images/circle_shape.jpg">
 							</button>
-							<button class = "Shape_button" value = "hexagon" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/hexagon_shape.jpg">
+							<button class = "Shape_button" name = "hexagon">
+							<img class = "shape_img" name = "hexagon" src="images/hexagon_shape.jpg">
 							</button>
-							<button class = "Shape_button" value = "rhombus" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/rhombus_shape.jpg">
+							<button class = "Shape_button" name = "rhombus">
+							<img class = "shape_img" name = "rhombus" src="images/rhombus_shape.jpg">
+							</button>
+							<button class = "Shape_button" name = "rectangle">
+							<img class = "shape_img" name = "rectangle" src="images/rectangle_shape.jpg">
 							</button>
 							<br/>
-							<button class = "Shape_button" value = "rectangle" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/rectangle_shape.jpg">
+							<button class = "Shape_button" name = "oval">
+							<img class = "shape_img" name = "oval" src="images/oval_shape.jpg">
 							</button>
-							<button class = "Shape_button" value = "oval" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/oval_shape.jpg">
+							<button class = "Shape_button" name = "pentagon">
+							<img class = "shape_img" name = "pentagon" src="images/pentagon_shape.jpg">
 							</button>
-							<button class = "Shape_button" value = "pentagon" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/pentagon_shape.jpg">
+							<button class = "Shape_button" name = "octogon">
+							<img class = "shape_img"  name = "octogon" src="images/octogon_shape.jpg">
 							</button>
-							<button class = "Shape_button" value = "octogon" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/octogon_shape.jpg">
-							</button>
-							<button class = "Shape_button" value = "Triangle" onclick= "buttonSelectionFormat(this)">
-							<img class = "shape_img" src="images/triangle_shape.jpg">
+							<button class = "Shape_button" name = "Triangle">
+							<img class = "shape_img" name = "Triangle" src="images/triangle_shape.jpg">
 							</button>
 						</div>
-						
+							</br>
+							</br>
+							<form action="/action_page.php">
+							<label for="favcolor">Please select a background color:</label>
+							<input type="color" id="color" name="color" value="#ffffff"><br><br>
+							</form>
+						<form>
+							<label for="files">Upload images of dog here:</label>
+							<input type="file" id="files" name="files" multiple><br><br>
+						</form>
 						<br/>
-                        <a href="#" class="btn buy-btn">Buy Now</a>
+						<br/>
+						<div class= "totals">
+						<label > Total: $<label> 
+						<p id = "total_display">35</p>
+						</div>
+						<div>
+                        <a class="btn buy-btn" id ="add_cart">Add to Cart</a>
+						</div>
                     </div>
                 </div>
             </div>
@@ -131,15 +164,6 @@ include_once 'header.php';
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <h5>(C) 2017. All Rights Reserved. <a href="#">Single Product Template</a></h5>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js">
-    </script>
-    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</body>
-
-</html>
+<?php
+include_once 'footer.php';
+?>

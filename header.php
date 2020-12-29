@@ -11,29 +11,40 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
     <!--    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/orderDesignSelect.js"></script>
+
 </head>
 
 <body>
 	<header>
 		<div class="container">
 			<div class="logo">
-				<button class="dropbtn"> 
-				<a href="index.php">
-				<img src="images/logo.png" alt="logo">
-				</a>
-				</button>	
+				<ul id="main_nav">
+					<li>
+					<a href="index.php" class= "logoContainer">
+					<img src="images/logo.png" alt="logo">
+					</a>
 				<div class= "dropdown-content">
-				<a href="customAcrylic.php"> Custom Acrylic Portraits </a>
-				<a href=""> Custom Water Color Portraits </a>
-				<a href=""> Custom Digital Portraits </a>
-				<a href=""> Digital Prints </a>
+							<ul>
+								<li><a>Custom Pet Portraits</a>
+									<ul class = "subList">
+										<li><a href="customAcrylic.php">Acrylic</a></li>
+										<li><a href="#">Water Color</a></li>
+										<li><a href="#">Digital</a></li>
+										<li><a href="#">Ink</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Landscapes</a></li>
+								<li><a href="#">Digital Prints</a></li>
+							</ul>
+					</li>							
+				</ul>
 				</div>
 			</div>
 			<div class = "navbuttons">
 			<nav>
-				<a href="">Orders</a>
-				<a href="">Admin</a>
+				<a id= "checkout_button" href="checkout.php">Checkout</a>
+				<a id= "orders_button" href="">Orders</a>
+				<a id= "admin_button" href="">Admin</a>
 			</nav>
 			</div>
 		</div>

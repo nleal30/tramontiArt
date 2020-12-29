@@ -139,15 +139,6 @@ include_once 'header.php';
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <h5>(C) 2017. All Rights Reserved. <a href="#">Single Product Template</a></h5>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js">
-    </script>
-    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</body>
-
-</html>
+<?php
+include_once 'footer.php';
+?>	
