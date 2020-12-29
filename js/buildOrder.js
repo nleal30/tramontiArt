@@ -82,6 +82,7 @@ class Order {
 	}
 
 	cartAdd(){
+		localStorage["CartTotal"] = cartTotal;
 		cartTotal = parseInt(localStorage["CartTotal"]) + 1;
 		console.log(cartTotal);
 		if (cartTotal == 1)
