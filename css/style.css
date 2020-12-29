@@ -412,8 +412,8 @@ header .logo {
 
 .logo img
 {
-width: 60px;
-height: 60px;
+width: 24%;
+height: 24%;
 }
 
 #checkout_button
@@ -467,7 +467,7 @@ header .logo:hover {
     float: Right;
     text-align: right;
     padding: 5px 0;
-	font-size: 14px;
+	font-size: 80%;
 	word-spacing: 6px;
 	font-Weight: bold;
 	height: 60%;
